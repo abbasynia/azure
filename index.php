@@ -54,11 +54,10 @@
         $stmt->bindValue(1, $name);
         $stmt->bindValue(2, $email);
         $stmt->bindValue(3, $date);
-        $stmt->bindValue(4, $company);
+        $stmt->bindValue(4, $company);j
         $stmt->execute();
     }
     catch(Exception $e) {
-echo "<h3>Error occured.</h3>";
         die(var_dump($e));
     }
     echo "<h3>Your're registered!</h3>";

@@ -21,7 +21,7 @@
 <form method="post" action="index.php" enctype="multipart/form-data" >
       Name  <input type="text" name="name" id="name"/></br>
       Email <input type="text" name="email" id="email"/></br>
-      Email <input type="text" name="company" id="company"/></br>
+      Company <input type="text" name="company" id="company"/></br>
       <input type="submit" name="submit" value="Submit" />
 </form>
 <?php
@@ -48,13 +48,13 @@
         $Company = $_POST('company');
         $date = date("Y-m-d");
         // Insert data
-        $sql_insert = "INSERT INTO registration_tbl (name, email, company, date) 
+        $sql_insert = "INSERT INTO registration_tbl (name, email, date, company) 
                    VALUES (?,?,?,?)";
         $stmt = $conn->prepare($sql_insert);
         $stmt->bindValue(1, $name);
         $stmt->bindValue(2, $email);
-        $stmt->bindValue(3, $Company);
-        $stmt->bindValue(4, $date);
+        $stmt->bindValue(4, $Company);
+        $stmt->bindValue(3, $date);
         $stmt->execute();
     }
     catch(Exception $e) {

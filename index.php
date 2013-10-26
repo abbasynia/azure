@@ -18,6 +18,7 @@
 <body>
 <h1>Register here!</h1>
     <p>Fill in your name, email address and Company then click <strong>Submit</strong> to register.</p>
+<a href="http://www.abbasdb.azurewebsites.net/search.php">Search for an entry</a> 
 <form method="post" action="index.php" enctype="multipart/form-data" >
       Name  <input type="text" name="name" id="name"/></br>
       Email <input type="text" name="email" id="email"/></br>

@@ -48,14 +48,14 @@
         $company = $_POST('company');
         $date = date("Y-m-d");
         // Insert data
-        $sql_insert = "INSERT INTO registration_tbl (name, email, Company) 
-                   VALUES ("bob","b","s")";
-	// $stmt = $conn->prepare($sql_insert);
-	//  $stmt->bindValue(1, $name);
-        //$stmt->bindValue(2, $email);
-        //$stmt->bindValue(3, $date);
-        //$stmt->bindValue(4, $company);
-        //$stmt->execute();
+        $sql_insert = "INSERT INTO registration_tbl (name, email, date, Company) 
+                   VALUES (?,?,?,?)";
+        $stmt = $conn->prepare($sql_insert);
+        $stmt->bindValue(1, $name);
+        $stmt->bindValue(2, $email);
+        $stmt->bindValue(3, $date);
+        $stmt->bindValue(4, $company);
+        $stmt->execute();
     }
     catch(Exception $e) {
         die(var_dump($e));

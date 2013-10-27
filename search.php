@@ -16,9 +16,9 @@
 </style>
 </head>
 <body>
-<h1>Register here!</h1>
+<h1>Search here!</h1>
     <p>Fill in your name, email address or Company then click <strong>Submit</strong> to search.</p>
-<a href="http://www.abbasdb.azurewebsites.net/index.php">Register an entry</a> 
+<a href="index.php">Register an entry</a> 
 <form method="post" action="index.php" enctype="multipart/form-data" >
       Name  <input type="text" name="name" id="name"/></br>
       Email <input type="text" name="email" id="email"/></br>

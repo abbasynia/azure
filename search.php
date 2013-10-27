@@ -19,7 +19,7 @@
 <h1>Search here!</h1>
     <p>Fill in your name, email address or Company then click <strong>Submit</strong> to search.</p>
 <a href="index.php">Register an entry</a> 
-<form method="post" action="index.php" enctype="multipart/form-data" >
+<form method="post" action="search.php" enctype="multipart/form-data" >
       Name  <input type="text" name="name" id="name"/></br>
       Email <input type="text" name="email" id="email"/></br>
       Company <input type="text" name="company" id="company"/></br>
@@ -70,7 +70,7 @@
         }
         echo "</table>";
     } else {
-        echo "<h3>No one is currently registered.</h3>";
+        echo "<h3>No one is currently registered with those attributes.</h3>";
     }
     }
     catch(Exception $e) {

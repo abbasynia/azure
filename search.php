@@ -78,6 +78,7 @@
     }
     echo "<h3>Search Complete!</h3>";
     }
+    else{echo "<h3>Type something then!</h3>";}
     // Retrieve data
 ?>
 </body>

@@ -21,8 +21,8 @@
 <a href="index.php">Register an entry</a> 
 <form method="post" action="search.php" enctype="multipart/form-data" >
       Name  <input type="text" name="name" id="name"/></br>
-      Email <input type="text" name="email" id="email"/></br>
-      Company <input type="text" name="company" id="company"/></br>
+     // Email <input type="text" name="email" id="email"/></br>
+     // Company <input type="text" name="company" id="company"/></br>
       <input type="submit" name="submit" value="Submit" />
 </form>
 <?php
@@ -45,15 +45,15 @@
     if(!empty($_POST)) {
     try {
         $name = $_POST['name'];
-        $email = $_POST['email'];
-        $company = $_POST['company'];
+	// $email = $_POST['email'];
+	// $company = $_POST['company'];
         // Search data
-        $sql_search = "select * from registration_tbl where name=? or email=? or Company=?";
+        $sql_search = "select * from registration_tbl where name=?";
         $stmt = $conn->prepare($sql_search);
         $stmt->bindValue(1, $name);
-        $stmt->bindValue(2, $email);
-        $stmt->bindValue(3, $company);
-        $stmt->execute();
+	// $stmt->bindValue(2, $email);
+	// $stmt->bindValue(3, $company);
+	// $stmt->execute();
         $registrants = $stmt->fetchAll(); 
         if(count($registrants) > 0) {
         echo "<h2>People who are registered:</h2>";

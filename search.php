@@ -47,7 +47,6 @@
         $name = $_POST['name'];
         $email = $_POST['email'];
         $company = $_POST['company'];
-        $date = date("Y-m-d");
         // Search data
         $sql_search = "select * from registration_tbl where name=? or email=? or Company=?";
         $stmt = $conn->prepare($sql_search);

@@ -44,7 +44,7 @@
     try {
         $name = $_POST['name'];
         // Search data
-        $sql_search = "select * from registration_tbl where name=?";
+        $sql_search = "select * from registration_tbl where name like concat ('%', ?, '%')";
         $stmt = $conn->prepare($sql_search);
         $stmt->bindValue(1, $name);
         $stmt->execute();

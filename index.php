@@ -18,5 +18,8 @@
 <body>
 <h1>Who am I?!</h1>
     <p>My name is <strong>Abbas Mirza</strong>. I'm a 2nd year computer scientist working on the Captain Chip project!</p>
+
+<p>Check out my Wordpress blog: </p>
+<iframe width="420" height="315" src="manutdabbas1994.wordpress.com" frameborder="0" allowfullscreen></iframe>
 </body>
 </html>

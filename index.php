@@ -16,7 +16,7 @@
 </style>
 </head>
 <body>
-<h1>Register here!</h1>
+<h1>Who am I?!</h1>
     <p>My name is <strong>Abbas Mirza</strong>. I'm a 2nd year computer scientist working on the Captain Chip project!</p>
 </body>
 </html>

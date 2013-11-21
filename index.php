@@ -1,6 +1,6 @@
 <html>
 <head>
-<Title>Registration Form</Title>
+<Title>Abbas' page</Title>
 <style type="text/css">
     body { background-color: #fff; border-top: solid 10px #000;
         color: #333; font-size: .85em; margin: 20; padding: 20;
@@ -21,5 +21,12 @@
 
 <p>Check out my Wordpress blog: </p>
 <iframe width="420" height="315" src="https://manutdabbas1994.wordpress.com" frameborder="0" allowfullscreen></iframe>
+<p>And here are the recent commits to GitHub! </p>
+<script>
+    $(function() {
+        $('#github-commits').githubInfoWidget(
+            { user: 'abbasynia', repo: 'azure', branch: 'master' });
+    });
+</script>
 </body>
 </html>

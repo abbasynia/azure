@@ -22,6 +22,14 @@
 <p>Check out my Wordpress blog: </p>
 <iframe width="420" height="315" src="https://manutdabbas1994.wordpress.com" frameborder="0" allowfullscreen></iframe>
 <p>And here are the recent commits to GitHub! </p>
+ <div id="container">
+    <div id="main">
+                <div id="github-commits"></div>
+    </div>
+  </div> 
+  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+  <script src="js/github.commits.widget.js"></script>
 <script>
     $(function() {
         $('#github-commits').githubInfoWidget(

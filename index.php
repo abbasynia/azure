@@ -25,7 +25,7 @@
 <script>
     $(function() {
         $('#github-commits').githubInfoWidget(
-            { user: 'abbasynia', repo: 'azure', branch: 'master' });
+            { user: 'abbasynia', repo: 'azure', branch: 'master', last: 10 });
     });
 </script>
 </body>

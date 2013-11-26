@@ -1,0 +1,55 @@
+<html>
+<canvas id="canvas" width="300" height="300"></canvas>
+<script src="js/all.js"></script>
+<head>
+<script>
+	var x = 10;
+	var y = 10;
+	var test = 0;
+	var canvas = new fabric.Canvas('canvas');
+	
+function whichKey(event)
+{
+	key = event.keyCode;
+	switch(key){
+	case 37: x-=5;
+		break;
+	case 38: y-=5;;
+		break;
+	case 39: x+=5;	
+		break;
+	case 40: y+=5;;
+		break;
+	}
+	
+	triangle.set({ left: x, top: y });
+	canvas.renderAll();
+	}
+	
+	function pos(event)
+{
+	key = event.keyCode;
+	var angle = triangle.getAngle();
+	switch(key){
+	case 37: x-=5;	//left
+	triangle.setAngle(angle-90); test
+		break;
+	case 39: x+=5;	//right
+	triangle.setAngle(angle+90);	
+		break;
+	}
+	canvas.renderAll();
+	}
+
+</script>
+</head>
+<body onkeypress="pos(event)">
+<body onkeydown="whichKey(event)">
+<script>
+var triangle = new fabric.Triangle({
+  width: 20, height: 30, fill: 'red', left: 10, top: 10
+});
+canvas.add(triangle);
+</script>
+</body>
+</html>
